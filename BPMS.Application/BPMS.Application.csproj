@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GoogleAuthenticator" Version="3.0.0" />
+    <PackageReference Include="SkiaSharp" Version="2.88.3" />
+    <PackageReference Include="System.Management" Version="7.0.1" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BPMS.BuildingBlocks.Infrastructure\BPMS.BuildingBlocks.Infrastructure.csproj" />
+    <ProjectReference Include="..\BPMS.Infrastructure\BPMS.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Kendo.Mvc">
+      <HintPath>..\lib\Kendo.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CQRS\Sample\Create\" />
+  </ItemGroup>
+
+</Project>

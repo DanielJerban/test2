@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EPPlus" Version="6.2.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BPMS.BuildingBlocks.Domain\BPMS.BuildingBlocks.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="Kendo.Mvc">
+			<HintPath>..\lib\Kendo.Mvc.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>

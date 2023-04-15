@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="RestSharp" Version="110.2.0" />
+		<PackageReference Include="StackExchange.Redis" Version="2.6.104" />
+		<PackageReference Include="System.CodeDom" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\BPMS.BuildingBlocks.Application\BPMS.BuildingBlocks.Application.csproj" />
+		<ProjectReference Include="..\BPMS.Domain\BPMS.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="Kendo.Mvc">
+			<HintPath>..\lib\Kendo.Mvc.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.Entity.Design.PluralizationServices">
+			<HintPath>..\lib\JsonClassGenerator\System.Data.Entity.Design.PluralizationServices.dll</HintPath>
+		</Reference>
+		<Reference Include="Xamasoft.JsonClassGenerator">
+			<HintPath>..\lib\JsonClassGenerator\Xamasoft.JsonClassGenerator.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>
